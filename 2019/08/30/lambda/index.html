@@ -22,7 +22,7 @@
 <meta name="keywords" content>
 
 
-<meta name="description" content="什么是VueVue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅...">
+<meta name="description" content="Java中的Lambda表达式1、概念：（1）Lambda表达式是Java SE 8中一个重要的新特性。lambda表达式允许你通过表达式来代替功能接口。 lambda表达式就和方法一样,它提供...">
 
 
 <meta name="robots" content="all">
@@ -33,7 +33,7 @@
 
 <title>
     
-    Vue |
+    lambda |
     
     Hexo
 </title>
@@ -138,9 +138,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Vue">
+        <h1 id="lambda">
             
-            Vue
+            lambda
             
         </h1>
         <div class="post-meta">
@@ -163,7 +163,7 @@
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
         <span class="date-meta">
-            2019/08/23</span>
+            2019/08/30</span>
     </span>
     
     
@@ -173,8 +173,7 @@
     </div>
     
     <div class="post-body post-content">
-        <h2 id="什么是Vue"><a href="#什么是Vue" class="headerlink" title="什么是Vue"></a>什么是Vue</h2><p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。<br>Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用<br>时，Vue 也完全能够为复杂的单页应用提供驱动。</p>
-<p>1、兼容性：Vue 不支持 IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECMAScript 5 特性。但它支持所有兼容 ECMAScript 5 的浏览器。<br>2、使用要点：在使用 Vue 时，我们推荐在你的浏览器上安装 Vue Devtools。它允许你在一个更友好的界面中审查和调试 Vue 应用。火狐浏览器可以正常安装，Chrome安装需要翻墙，插件地址:<a href="https://github.com/vuejs/vue-devtools" target="_blank" rel="noopener">https://github.com/vuejs/vue-devtools</a><br>3、版本区分：vue分为开发版和生产版，区别：<br>开发板：包含完整的警告和调试模式<br>生产版：删除了警告，33.30KB min+gzip<br>4、vue的安装方式：<br>（1）直接下载并用 script 标签引入，Vue 会被注册为一个全局变量。下载地址：<a href="https://cn.vuejs.org/v2/guide/installation.html#%E7%9B%B4%E6%8E%A5%E7%94%A8-lt-script-gt-%E5%BC%95%E5%85%A5" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/installation.html#%E7%9B%B4%E6%8E%A5%E7%94%A8-lt-script-gt-%E5%BC%95%E5%85%A5</a><br>（2）CDN:<a href="https://cn.vuejs.org/v2/guide/installation.html#CDN" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/installation.html#CDN</a><br>（3）NPM:<a href="https://cn.vuejs.org/v2/guide/installation.html#NPM" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/installation.html#NPM</a>  在用 Vue 构建大型应用时推荐使用 NPM 安装。NPM 能很好地和诸如 webpack 或 Browserify 模块打包器配合使用。<br>同时 Vue 也提供配套工具来开发单文件组件。语法：$ npm install vue<br>（4）命令行工具cli：<a href="https://cn.vuejs.org/v2/guide/installation.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-CLI" target="_blank" rel="noopener">https://cn.vuejs.org/v2/guide/installation.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-CLI</a></p>
+        <h2 id="Java中的Lambda表达式"><a href="#Java中的Lambda表达式" class="headerlink" title="Java中的Lambda表达式"></a>Java中的Lambda表达式</h2><p>1、概念：<br>（1）Lambda表达式是Java SE 8中一个重要的新特性。lambda表达式允许你通过表达式来代替功能接口。 lambda表达式就和方法一样,它提供了一个正常的参数列表和一个使用这些参数的主体(body,可以是一个表达式或一个代码块)。<br>（2）Lambda表达式增强了集合库。 Java SE 8添加了2个对集合数据进行批量操作的包: java.util.function 包以及java.util.stream 包。 流(stream)就如同迭代器(iterator),但附加了许多额外的功能。<br>（3）在Lambda表达式中this是指外围实例，而匿名类中的this是指匿名类实例。<br>2、流（stream）的特性：<br>（1）stream不存储数据<br>（2）stream不改变源数据，对stream的操作也不会影响到创建它的数组和集合<br>（3）stream的延迟执行特性，延迟性是指当stream的终结操作执行的时候，前面的中间操作才执行。<br>（4）对于stream的聚合、消费或收集操作只能进行一次，再次操作会报错。<br>3、Lambda表达式的语法:<br>基本语法: (parameters) -&gt; expression 或 (parameters) -&gt;{ statements; }<br>4、这里是代码块</p>
 
     </div>
     
@@ -193,12 +192,12 @@
 </article>
 <div class="article-nav prev-next-wrap clearfix">
     
-    <a href="/2019/08/30/lambda/" class="pre-post btn btn-default" title='lambda'>
-        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-        <span class="hidden-xs">
-            lambda</span>
-    </a>
     
+    <a href="/2019/08/23/Vue/" class="next-post btn btn-default" title='Vue'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            Vue</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
     
 </div>
 
@@ -236,7 +235,7 @@ new Valine({
             文章目录
         </h3>
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是Vue"><span class="toc-text">什么是Vue</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java中的Lambda表达式"><span class="toc-text">Java中的Lambda表达式</span></a></li></ol>
         
     </div>
 </aside>
