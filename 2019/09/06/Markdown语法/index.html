@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content>
+
+
+<meta name="description" content="Markdown语法简介1、字体设置：换行、斜体、粗体、删除线(1)使用反斜杠进行换行：”\“(2)斜体：语法：”* *“、”_ _”示例1：这里是斜体示例2：_这里是斜体_(3)粗体：语法：”...">
+
+
+<meta name="robots" content="all">
+<meta name="google" content="all">
+<meta name="googlebot" content="all">
+<meta name="verify" content="all">
+    <!--Title-->
+
+<title>
+    
+    Markdown语法 |
+    
+    Hexo
+</title>
+
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+</head></html>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='John Doe'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        Hexo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="Markdown语法">
+            
+            Markdown语法
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2019/09/06</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h2 id="Markdown语法简介"><a href="#Markdown语法简介" class="headerlink" title="Markdown语法简介"></a>Markdown语法简介</h2><h3 id="1、字体设置：换行、斜体、粗体、删除线"><a href="#1、字体设置：换行、斜体、粗体、删除线" class="headerlink" title="1、字体设置：换行、斜体、粗体、删除线"></a>1、字体设置：换行、斜体、粗体、删除线</h3><p>(1)使用反斜杠进行换行：”\“<br>(2)斜体：<br>语法：”* *“、”_ _”<br>示例1：<em>这里是斜体</em><br>示例2：_这里是斜体_<br>(3)粗体：<br>语法：”** **”<br>示例：<strong>这里是粗体</strong><br>(4)斜体和粗体：<br>语法：&quot;*** <strong><em>&quot;<br>示例：</em></strong>这里是斜体并加粗***<br>(5)删除线：<br>语法：”<del>~ ~</del>“<br>示例：<del>这里是删除线</del>\</p>
+<h3 id="2、分级标题（注意‘-’后面要加空格）"><a href="#2、分级标题（注意‘-’后面要加空格）" class="headerlink" title="2、分级标题（注意‘#’后面要加空格）"></a>2、分级标题（注意‘#’后面要加空格）</h3><p>(1)一级标题：<br>语法：”# “</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><p>(2)二级标题：<br>语法：”## “</p>
+<h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><p>(3)三级标题：<br>语法：”### “</p>
+<h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><p>(4)四级标题：<br>语法：”#### “\</p>
+<h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><p>(5)五级标题：<br>语法：”##### “\</p>
+<h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><p>(6)六级标题：<br>语法：”###### “\</p>
+<h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><h3 id="3、插入图片"><a href="#3、插入图片" class="headerlink" title="3、插入图片"></a>3、插入图片</h3><p>语法：”![图片描述](图片链接)”<br>示例：”![百度](<a href="https://www.baidu.com/img/bd_logo1.png)&quot;\" target="_blank" rel="noopener">https://www.baidu.com/img/bd_logo1.png)&quot;\</a><br><img src="https://www.baidu.com/img/bd_logo1.png" alt="百度"></p>
+<h3 id="4、链接"><a href="#4、链接" class="headerlink" title="4、链接"></a>4、链接</h3><p>1、点击打开百度：<a href="https://www.baidu.com/?tn=88093251_30_hao_pg" target="_blank" rel="noopener">https://www.baidu.com/?tn=88093251_30_hao_pg</a></p>
+<h3 id="5、分割线"><a href="#5、分割线" class="headerlink" title="5、分割线"></a>5、分割线</h3><p>语法：你可以在一行中用三个以上的星号(*)、底线(_)来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br>语法示例：”<strong>*”、”—“、”___”<br>示例1：”*</strong>“</p>
+<hr>
+<p>示例2：”_ _ _”</p>
+<hr>
+<h3 id="6、代码块"><a href="#6、代码块" class="headerlink" title="6、代码块"></a>6、代码块</h3><p>对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(tab), 另一种是利用英文“`”符号（一般在ESC键下方，和~同一个键）包裹代码。<br>(1)代码块：缩进 4 个空格或是 1 个制表符。效果如下：<br>    <code>public void static main(String[] args){
+        System.out.println(&quot;哈哈哈&quot;);
+    }</code><br>(2)多行代码块与语法高亮：在需要高亮的代码块的前一行及后一行使用三个单反引号“`”包裹，就可以了。示例如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void static main(String[] args)&#123;</span><br><span class="line">    System.out.println(&quot;哈哈哈&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="7、无序列表和有序列表"><a href="#7、无序列表和有序列表" class="headerlink" title="7、无序列表和有序列表"></a>7、无序列表和有序列表</h3><h4 id="7-1无序列表："><a href="#7-1无序列表：" class="headerlink" title="7.1无序列表："></a>7.1无序列表：</h4><p>语法：使用 *，+，- 表示无序列表。注意：符号后面一定要有一个空格，起到缩进的作用。\</p>
+<ul>
+<li>列表文字1</li>
+<li>列表文字1</li>
+<li>列表文字1<blockquote>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>列表文字1</li>
+<li>列表文字1</li>
+<li>列表文字1<blockquote>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>列表文字1</li>
+<li>列表文字1</li>
+<li>列表文字1<h4 id="7-2有序列表："><a href="#7-2有序列表：" class="headerlink" title="7.2有序列表："></a>7.2有序列表：</h4>语法：使用数字和一个英文句点表示有序列表。注意：英文句点后面一定要有一个空格，起到缩进的作用。 \</li>
+</ul>
+<ol>
+<li>列表文字1</li>
+<li>列表文字1</li>
+<li>列表文字1<h3 id="8、表格"><a href="#8、表格" class="headerlink" title="8、表格"></a>8、表格</h3>表格的基本写法很简单，就跟表格的形状很相似： <br>语法示例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">学号|姓名|分数</span><br><span class="line">-|-|-</span><br><span class="line">1|小明|60</span><br><span class="line">2|小红|61</span><br><span class="line">3|小二|62</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>效果展示：<br>学号|姓名|分数<br>-|-|-<br>1|小明|60<br>2|小红|61<br>3|小二|62</p>
+<h3 id="本文摘录自"><a href="#本文摘录自" class="headerlink" title="本文摘录自"></a>本文摘录自</h3><p><a href="https://blog.csdn.net/u014061630/article/details/81359144#25-%E4%BB%A3%E7%A0%81%E5%9D%97" target="_blank" rel="noopener">https://blog.csdn.net/u014061630/article/details/81359144#25-%E4%BB%A3%E7%A0%81%E5%9D%97</a></p>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/2019/08/30/lambda/" class="next-post btn btn-default" title='lambda'>
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            lambda</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown语法简介"><span class="toc-text">Markdown语法简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、字体设置：换行、斜体、粗体、删除线"><span class="toc-text">1、字体设置：换行、斜体、粗体、删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、分级标题（注意‘-’后面要加空格）"><span class="toc-text">2、分级标题（注意‘#’后面要加空格）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题"><span class="toc-text">这是一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这是二级标题"><span class="toc-text">这是二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这是三级标题"><span class="toc-text">这是三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#这是四级标题"><span class="toc-text">这是四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#这是五级标题"><span class="toc-text">这是五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#这是六级标题"><span class="toc-text">这是六级标题</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、插入图片"><span class="toc-text">3、插入图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、链接"><span class="toc-text">4、链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、分割线"><span class="toc-text">5、分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、代码块"><span class="toc-text">6、代码块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、无序列表和有序列表"><span class="toc-text">7、无序列表和有序列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1无序列表："><span class="toc-text">7.1无序列表：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2有序列表："><span class="toc-text">7.2有序列表：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、表格"><span class="toc-text">8、表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本文摘录自"><span class="toc-text">本文摘录自</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+</body>
+</html>

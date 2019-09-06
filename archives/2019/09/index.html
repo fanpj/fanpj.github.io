@@ -22,7 +22,7 @@
 <meta name="keywords" content>
 
 
-<meta name="description" content="Java中的Lambda表达式1、概念：（1）Lambda表达式是Java SE 8中一个重要的新特性。lambda表达式允许你通过表达式来代替功能接口。 lambda表达式就和方法一样,它提供...">
+<meta name="description" content>
 
 
 <meta name="robots" content="all">
@@ -33,7 +33,7 @@
 
 <title>
     
-    lambda |
+    归档：2019/9 |
     
     Hexo
 </title>
@@ -134,117 +134,183 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content m-post">
-                    <p id="process"></p>
-<article class="post">
-    <div class="post-head">
-        <h1 id="lambda">
-            
-            lambda
-            
-        </h1>
-        <div class="post-meta">
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-        </span>
-    </span>
-    
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">
-            2019/08/30</span>
-    </span>
-    
-    
-</div>
-        
-        
-    </div>
-    
-    <div class="post-body post-content">
-        <h2 id="Java中的Lambda表达式"><a href="#Java中的Lambda表达式" class="headerlink" title="Java中的Lambda表达式"></a>Java中的Lambda表达式</h2><p>1、概念：<br>（1）Lambda表达式是Java SE 8中一个重要的新特性。lambda表达式允许你通过表达式来代替功能接口。 lambda表达式就和方法一样,它提供了一个正常的参数列表和一个使用这些参数的主体(body,可以是一个表达式或一个代码块)。<br>（2）Lambda表达式增强了集合库。 Java SE 8添加了2个对集合数据进行批量操作的包: java.util.function 包以及java.util.stream 包。 流(stream)就如同迭代器(iterator),但附加了许多额外的功能。<br>（3）在Lambda表达式中this是指外围实例，而匿名类中的this是指匿名类实例。<br>2、流（stream）的特性：<br>（1）stream不存储数据<br>（2）stream不改变源数据，对stream的操作也不会影响到创建它的数组和集合<br>（3）stream的延迟执行特性，延迟性是指当stream的终结操作执行的时候，前面的中间操作才执行。<br>（4）对于stream的聚合、消费或收集操作只能进行一次，再次操作会报错。<br>3、Lambda表达式的语法:<br>基本语法: (parameters) -&gt; expression 或 (parameters) -&gt;{ statements; }<br>4、示例：<br>    <table><tr><td bgcolor="black"><font color="gray"><br>    // Java 8之前：<br>    new Thread(new Runnable() {<br>        @Override<br>        public void run() {<br>        System.out.println(“Before Java8, too much code for too little to do”);<br>        }<br>    }).start();<br>    //Java 8方式：<br>    new Thread( () -&gt; System.out.println(“In Java8, Lambda expression rocks !!”) ).start();<br>    </font></td></tr></table></p>
-
-    </div>
-    
-    <div class="post-footer">
-        <div>
-            
-            转载声明：
-            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
-            
-            
+                <main class="col-md-8 main-content ">
+                    <div id="main">
+    <div class="timebox">
+        <div class="timeline">
+            <ul>
+                
+                
+                
+                
+                
+                
+                <h2>
+                    2019
+                </h2>
+                
+                
+                <li class="">
+                    
+                    <h3>
+                        06<span>
+                            09月</span>
+                    </h3>
+                    <a href="/2019/09/06/Markdown语法/" title="Markdown语法" target="_blank">
+                        Markdown语法</a>
+                </li>
+                
+                
+                
+                
+                
+                
+                <li class="hide">
+                    
+                    <h3>
+                        30<span>
+                            08月</span>
+                    </h3>
+                    <a href="/2019/08/30/lambda/" title="lambda" target="_blank">
+                        lambda</a>
+                </li>
+                
+                
+                
+                
+                
+                
+                <li class="hide">
+                    
+                    <h3>
+                        23<span>
+                            08月</span>
+                    </h3>
+                    <a href="/2019/08/23/Vue/" title="Vue" target="_blank">
+                        Vue</a>
+                </li>
+                
+                
+            </ul>
         </div>
-        <div>
-            
-        </div>
     </div>
-</article>
-<div class="article-nav prev-next-wrap clearfix">
-    
-    <a href="/2019/09/06/Markdown语法/" class="pre-post btn btn-default" title='Markdown语法'>
-        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-        <span class="hidden-xs">
-            Markdown语法</span>
-    </a>
-    
-    
-    <a href="/2019/08/23/Vue/" class="next-post btn btn-default" title='Vue'>
-        <span class="hidden-lg">下一篇</span>
-        <span class="hidden-xs">
-            Vue</span><i class="fa fa-angle-right fa-fw"></i>
-    </a>
-    
 </div>
-
-<div id="comments">
-    
-
-<div id="vcomments" class="valine"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="/assets/valine.min.js"></script>
-<script>
-new Valine({
-    av: AV,
-    el: '#vcomments',
-    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
-    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
-    placeholder: '说点什么吧',
-    notify: false,
-    verify: true,
-    avatar: 'mm',
-    meta: 'nick,mail'.split(','),
-    pageSize: '10',
-    path: window.location.pathname,
-    lang: 'zh-CN'.toLowerCase()
-})
-</script>
-
-
-</div>
-
                 </main>
                 
-                    <aside id="article-toc" role="navigation" class="col-md-4">
-    <div class="widget">
-        <h3 class="title">
-            文章目录
-        </h3>
+                    
+<aside class="col-md-4 sidebar">
+    
+    
+<div class="widget">
+    <h3 class="title">
+        搜索
+    </h3>
+    <div id="search-form">
+        <div id="result-mask" class="hide"></div>
+        <div class="search-area">
+            
+            <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢？">
+            <button type="button" class="search-form-submit" id="search-local">
+                站内搜索</button>
+            
+            
+        </div>
+        <div id="result-wrap" class="hide">
+            <div id="search-result"></div>
+        </div>
+        <div class="hide">
+            <template id="search-tpl">
+                <div class="item">
+                    <a href="/{path}" title="{title}">
+                        <div class="title">{title}</div>
+                        <div class="content">{content}</div>
+                    </a>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        网站公告
+    </h3>
+    <div class="notification">
+        <p>
+    主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
+    主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
+    支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
+</p>
+    </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        社交
+    </h3>
+    <div class="content social">
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java中的Lambda表达式"><span class="toc-text">Java中的Lambda表达式</span></a></li></ol>
+        <a href="//github.com/shenliyang" rel="external nofollow" title="Github" target="_blank">
+            <i class="git fa fa-git"></i>
+        </a>
+        
+        <a href="mailto:snippet@91h5.cc" rel="external nofollow" title="邮箱" target="_blank">
+            <i class="envelope-o fa fa-envelope-o"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
+            <i class="qq fa fa-qq"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="微信" target="_blank">
+            <i class="weixin fa fa-weixin"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="QQ群" target="_blank">
+            <i class="users fa fa-users"></i>
+        </a>
+        
+        <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
+            <i class="feed fa fa-feed"></i>
+        </a>
         
     </div>
+</div>
+
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        归档
+    </h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/"><i class="fa" aria-hidden="true">2019年09月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/"><i class="fa" aria-hidden="true">2019年08月</i></a><span class="archive-list-count">2</span></li></ul>
+</div>
+
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        友链
+    </h3>
+    <div class="content friends-link">
+        
+        <a href="https://hexo.io/zh-cn/" class="fa" target="_blank">
+            Hexo官网</a>
+        
+    </div>
+</div>
+
+    
 </aside>
+
                 
             </div>
         </div>
@@ -280,6 +346,8 @@ new Valine({
         </div>
     </div>
 </div>
+
+<script src="/js/search.js?rev=@@hash"></script>
 
 
 
